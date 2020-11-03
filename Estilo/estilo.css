@@ -13,36 +13,65 @@ header > a > img{
     width: 200px;
     height: 200px;
     float: left;
+    clear: left;
 }
-header > nav{
+header nav{
     float: right;
-    background-color: #231107;
+    clear: right;
 }
-header > nav > .menu{
+header > nav > ul{
     list-style-type: none;
+    background-color: #231107;
+    padding-right: 15px;
 }
 header > nav > ul > li{
-    display: inline-flex;
-    padding: 5px;
-    margin: 5px;
-    font-size: 1.4rem;   
+    float: left;
+    padding: 10px;
+    font-size: 1.4rem;
+    background-color: #231107;
 }
 header > nav > ul > li > a{
+    display: block;
     text-decoration: none;
     color: white;
     transition: 0.5s;
     padding: 10px;
+    text-align: center;
 }
 .enlaces:hover{
     background-color: #61290b;
     transition: 0.8s;
-    font-size: 1.1em;  
+    font-size: 1.15em;  
 }
 .banderas:hover{
     background-color: #61290b;
     transition: 0.8s;
-    width: 30px;
-    height: 30px; 
+}
+nav ul ul{
+    display: none;
+}
+nav ul ul li{
+    float: none;
+    list-style: none;
+}
+nav ul ul a{
+    display: block;
+    padding: 8px 30px 8px 8px;
+    background-color: #231107;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    font-size: 0.7em;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+nav ul ul a:hover{
+    transition: 0.8s;
+    font-size: 0.8em;
+    background-color: #61290b;
+}
+nav ul li:hover > ul{
+    display: block;
 }
 #bandera1{
     width: 20px;
@@ -51,32 +80,6 @@ header > nav > ul > li > a{
 #bandera2{
     width: 20px;
     height: 20px;
-}
-nav ul ul {
-    display: none;
-}
-nav ul ul li {
-    float:none;
-    margin-top: 15px;
-    margin-left: -15px;
-}
-.subenlaces{
-    margin-bottom: -15px;
-}
-nav ul ul a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    font-size: 1.1rem;
-}
-nav ul ul a:hover{
-    background-color: #61290b;
-    transition: 0.8s;
-    font-size: 0.9em;
-}
-nav ul li:hover > ul {
-    display: block;
 }
 main{
     margin-top: 180px;
