@@ -14,15 +14,22 @@ header > a > img{
     height: 200px;
     float: left;
     clear: left;
+    padding-left: 15px;
+}
+#icono:hover{
+    transition: 0.6s;
+    width: 225px;
+    height: 225px;
 }
 header nav{
     float: right;
     clear: right;
+    padding: auto;
+    margin: auto;
 }
 header > nav > ul{
     list-style-type: none;
     background-color: #231107;
-    padding-right: 15px;
 }
 header > nav > ul > li{
     float: left;
@@ -34,17 +41,19 @@ header > nav > ul > li > a{
     display: block;
     text-decoration: none;
     color: white;
-    transition: 0.5s;
+    transition: 0.8s;
     padding: 10px;
     text-align: center;
 }
 .enlaces:hover{
     background-color: #61290b;
     transition: 0.8s;
-    font-size: 1.15em;  
+    font-size: 1.15em;
+    border-bottom: white 3px ridge;
 }
 .banderas:hover{
-    background-color: #61290b;
+    width: 28px;
+    height: 28px;
     transition: 0.8s;
 }
 nav ul ul{
@@ -72,14 +81,6 @@ nav ul ul a:hover{
 }
 nav ul li:hover > ul{
     display: block;
-}
-#bandera1{
-    width: 20px;
-    height: 20px;
-}
-#bandera2{
-    width: 20px;
-    height: 20px;
 }
 main{
     margin-top: 180px;
