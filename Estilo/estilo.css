@@ -24,8 +24,7 @@ header > a > img{
 header nav{
     float: right;
     clear: right;
-    padding: auto;
-    margin: auto;
+    padding-right: 15px;
 }
 header > nav > ul{
     list-style-type: none;
