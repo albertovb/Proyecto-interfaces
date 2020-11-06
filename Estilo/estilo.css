@@ -21,6 +21,22 @@ header > a > img{
     width: 225px;
     height: 225px;
 }
+
+#icono2 {
+    width: 60px;
+    height: 60px;
+    margin: -25px;
+    padding-left: 20px;
+}
+
+#icono2:hover{
+    width: 75px;
+    height: 75px;
+    margin-right: -5px;
+    margin-top: -10px;
+    transition: 0.8s;
+}
+
 header nav{
     float: right;
     clear: right;
@@ -77,6 +93,7 @@ nav ul ul a:hover{
     transition: 0.8s;
     font-size: 0.8em;
     background-color: #61290b;
+    border-bottom: white 2px ridge;
 }
 nav ul li:hover > ul{
     display: block;
@@ -85,6 +102,39 @@ main{
     margin-top: 180px;
     padding: 100px;
 }
+
+#historia {
+    border: black 5px solid;
+    width: 1250px;
+    height: 250px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+#carta_index {
+    border: black 5px solid;
+    width: 1250px;
+    height: 250px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+#eventos {
+    border: black 5px solid;
+    width: 1250px;
+    height: 250px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+#pedidos_reservas {
+    border: black 5px solid;
+    width: 1250px;
+    height: 250px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
 footer {
     background-color: #231107;
 }
@@ -116,5 +166,6 @@ a.contacto:hover {
     color: white;
     text-decoration: none;
     transition: 0.8s;
-    font-size: 1.3em;  
+    font-size: 1.3em;
+    border-bottom: white 3px ridge;   
 }
