@@ -1,9 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+/* css general */
 body{
     margin: auto;
     background-color: #f0e5d6;
     font-family: 'Montserrat', sans-serif;
 }
+/* css de los h1 */
+h1{
+    font-family: 'Dancing Script', cursive;
+    color: rgb(224, 166, 77);
+    text-align: center; 
+    padding: 50px 20px 20px 20px;
+    font-size: 3rem;
+    margin: 0 600px 0 600px;
+}
+h1:hover{
+    font-size: 3.5rem;
+    transition: 0.8s;
+}
+hr{
+    width: 25%;
+    border: white 5px solid;
+    border-radius: 5px;
+}
+/* Hacemos el header con imagen fixed */
 header{
     width: 100%;
     height: 250px;
@@ -11,6 +32,7 @@ header{
     background-attachment: fixed;
     border-bottom: rgba(109, 66, 41, 0.658) 15px outset;
 }
+/* Icono principal del restaurante */
 header > a > img{
     width: 200px;
     height: 200px;
@@ -18,25 +40,27 @@ header > a > img{
     clear: left;
     padding-left: 15px;
 }
-
+/* desplazamos a la derecha el icono */
 #icono {
     margin-top: 15px;
+    margin-right: 25px;
     float: right;
 }
-
+/* hover del icono */
 #icono:hover{
     transition: 0.6s;
     width: 225px;
     height: 225px;
 }
-
+/* icono del nav */
 #icono2 {
     width: 60px;
     height: 60px;
     margin: -25px;
     padding-left: 20px;
+    margin-right: 1px;
 }
-
+/* hover del icono del nav */
 #icono2:hover{
     width: 75px;
     height: 75px;
@@ -44,25 +68,27 @@ header > a > img{
     margin-top: -10px;
     transition: 0.8s;
 }
-
+/* posicionamos el nav */
 header nav{
     float: right;
     clear: right;
     padding-right: 15px;
+    margin-top: 15px;
+    position: fixed;
 }
-
+/* quitamos el estilo al ul y le ponemos fondo */
 header > nav > ul{
     list-style-type: none;
     background-color: #231107;
 }
-
+/* Metemos el menú a la izquierda */
 header > nav > ul > li{
     float: left;
     padding: 10px;
     font-size: 1.1rem;
     background-color: #231107;
 }
-
+/* css de los enlaces del menú*/
 header > nav > ul > li > a{
     display: block;
     text-decoration: none;
@@ -71,40 +97,29 @@ header > nav > ul > li > a{
     padding: 10px;
     text-align: center;
 }
-
-nav {
-    margin-top: 15px;
-    position: fixed;
-}
-
+/* hover de los enlaces */
 .enlaces:hover{
     background-color: #61290b;
     transition: 0.8s;
     font-size: 1.15em;
     border-bottom: white 3px ridge;
 }
-
+/* css de las banderas*/
 .banderas {
     margin-top: -5px;
     width: 22px;
     height: 22px;
 }
-
-.banderas:hover{
-    width: 28px;
-    height: 28px;
-    transition: 0.8s;
-}
-
+/* css para que los submenús se oculten*/
 nav ul ul{
     display: none;
 }
-
+/* quitamos estilo al submenú */
 nav ul ul li{
     float: none;
     list-style: none;
 }
-
+/* css enlaces submenú */
 nav ul ul a{
     display: block;
     padding: 8px 30px 8px 8px;
@@ -116,77 +131,203 @@ nav ul ul a{
     margin-right: 30px;
     margin-top: 10px;
 }
-
+/* hover enlaces submenús */
 nav ul ul a:hover{
     transition: 0.8s;
     font-size: 0.8em;
     background-color: #61290b;
     border-bottom: white 2px ridge;
 }
-
+/* hover de submenú para que se despliegue: */
 nav ul li:hover > ul{
     display: block;
 }
-
+/* css main*/
 main{
     margin-top: 180px;
     padding: 100px;
 }
-
+/* -divs de la página- */
+/* ------------Historia------------- */
 #historia {
-    border: black 5px solid;
+    border: rgb(109, 66, 41, 0.658) 5px solid;
+    border-radius: 5px;
     width: 1250px;
     height: 250px;
     margin: auto;
-    margin-top: -150px;
+    margin-top: -225px;
     margin-bottom: 40px;
-    opacity: 0.5;
+    background-image: url(../img/historia.jpg);
+    color:#ffffff;
+    word-spacing: 2px;
 }
-
-#carta_index {
-    border: black 5px solid;
+/* css de los h2 */
+.titulos{
+    padding: 0 0 0 20px;
+    color: white;
+}
+/* alineamos al centro */
+#h2_historia{
+    text-align: center;
+    margin: 10px 460px 96px 480px;
+}
+/* hover de historia */
+#historia:hover{
+    padding: 20px 20px 60px 20px;
+    transition: 0.8s;
+    opacity: 0.8;
+    font-size: 1.1rem;
+}
+/* hover de h2(historia) cuando estamos en historia */
+#historia:hover > #h2_historia{
+    transition: 0.8s;
+    font-weight: bold;
+    text-align: left;
+    background-color: rgb(0, 0, 0);
+    margin: auto 460px 96px 480px;
+    text-align: center;
+    padding-left: 15px;
+}
+/* css de <p> cuando hacemos hover en historia */
+#historia:hover > p{
+    background-color: black;
+    transition: 0.8s;
+    margin: 0 150px 0px 150px;
+}
+/* posicion texto */
+#texto_historia{
+    margin: 40px 100px 0px 100px;
+    padding: 5px;
+    background-color: black;
+}
+/* ---------------La carta---------------- */
+#div_carta {
+    border: rgb(109, 66, 41, 0.658) 5px solid;
+    border-radius: 5px;
     width: 1250px;
     height: 250px;
     margin: auto;
+    margin-top: 80px;
     margin-bottom: 40px;
-    opacity: 0.5;
 }
-
+/* css vinos */
+#vinos{
+    padding: 0 0 0 0;
+    float: right;
+    width: 624px;
+    height: 125px;
+    background-image: url(../img/vino.jpg);
+    background-repeat: no-repeat;
+}
+/* css menu del dia */
+#menu_dia{
+    padding: 1px 0 0 0;
+    width: 626px;
+    height: 124px;
+    background-image: url(../img/menu2.jpg);
+}
+/* css postres */
+#postres{
+    padding: 0 0 0 0;
+    float: right;
+    clear: right;
+    width: 624px;
+    height: 125px;
+    background-image: url(../img/postre.jpg);
+}
+/* css platos */
+#platos{
+    padding: 1px 0 0 0;
+    width: 626px;
+    height: 125px;
+    background-image: url(../img/platos.jpg);
+}
+/* hover de todos los apartados */
+.divs:hover{
+    opacity: 0.4;
+    background-position: center center;
+    transition: 0.8s;
+}
+.divs:hover > h2{
+    color: black;
+    font-weight: bold;
+}
+/* Quitamos decoración de los enlaces */
+.div_general > a{
+    text-decoration: none;
+}
+/* hover de h2  en cualquier div */
+.divs:hover > .titulos{
+    transition: 0.8s;
+    font-weight: bold;
+    text-align: left;
+    background-color: white;
+    margin: 96px auto auto auto;
+}
+/* ----------------eventos------------------- */
 #eventos {
-    border: black 5px solid;
+    border: rgb(109, 66, 41, 0.658) 5px solid;
+    border-radius: 5px;
     width: 1250px;
     height: 250px;
     margin: auto;
     margin-bottom: 40px;
-    opacity: 0.5;
+    margin-top: 80px;
+}
+#cata{
+    padding: 0 0 0 0;
+    float: right;
+    width: 624px;
+    height: 125px;
+    background-image: url(../img/cata.jpg);
+}
+#tapas{
+    padding: 1px 0 0 0;
+    width: 626px;
+    height: 124px;
+    background-image: url(../img/tapas.jpg);
+}
+#tematico{
+    padding: 0 0 0 0;
+    float: right;
+    clear: right;
+    width: 624px;
+    height: 125px;
+    background-image: url(../img/postre.jpg);
+}
+#festividad{
+    padding: 1px 0 0 0;
+    width: 626px;
+    height: 125px;
+    background-image: url(../img/festividad.jpg);
 }
 
 #pedidos_reservas {
-    border: black 5px solid;
+    border:  rgb(128, 128, 128) 5px solid;
     width: 1250px;
     height: 250px;
     margin: auto;
     margin-bottom: 40px;
-    opacity: 0.5;
+    margin-top: 80px;
 }
-
+/* css footer */
 footer {
     background-color: #231107;
 }
-
+/* posicion footer */
 ul.redes {
     margin-left: -15px;
     padding-top: 15px;
     padding-bottom: 10px;
     margin-bottom: auto;
 }
-
+/* css redes sociales */
 ul.redes li {
     padding: 5px;
     display:inline;
     list-style: none;
 }
-
+/* css enlace a contacto */
 a.contacto {
     float: right;
     background-color: #231107;
@@ -195,7 +336,7 @@ a.contacto {
     text-decoration: none;
     font-size: 1.1em; 
 }
-
+/* hover de contacto */
 a.contacto:hover {
     background-color: #61290b;
     color: white;
